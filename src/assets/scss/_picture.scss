@@ -1,0 +1,32 @@
+div.picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.picture {
+  font-family: monospace;
+  position: relative;
+  align-self: baseline;
+}
+
+div.picture::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.0;
+  pointer-events: none;
+  background-image: url('/assets/images/profile.png');
+  background-size: auto 106%;
+  transition: opacity 0.15s ease;
+  content: '';
+  background-repeat: no-repeat;
+  background-position-x: 2px;
+  background-position-y: -18px;
+}
+
+div.picture:hover::after {
+  opacity: 1.0;
+}

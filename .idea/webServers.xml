@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="76eb7b55-44a6-4f0e-8a6e-66d899b8f97d" name="sdc.sx" url="https://sdc.sx/">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="sdc.sx" port="22" sshConfigId="d61cd2ce-88b6-462f-8453-77a02a11eac8" sshConfig="scolton@sdc.sx:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="ddcd512e-44a5-4847-8fb5-641e6086d8d5" name="Local" url="http://localhost/">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

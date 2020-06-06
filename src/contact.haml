@@ -1,0 +1,37 @@
+!!! 5
+%html
+  %head
+    %meta{charset: 'UTF-8'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'}
+    %title Spencer Colton
+    %link{rel: 'stylesheet', href: '/assets/stylesheets/main.css'}
+    %script{src: '/assets/scripts/script.js'}
+    %script{src: 'https://kit.fontawesome.com/04a7ede306.js', crossorigin: 'anonymous'}
+  %body.contact
+    %header= File.read('nav.html')
+    %main
+      .picture-container
+        .picture= File.read('picture.html')
+      .name
+        %span &nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        %span &nbsp;/&nbsp;__|_&nbsp;__&nbsp;&nbsp;___&nbsp;_&nbsp;_&nbsp;&nbsp;__&nbsp;___&nbsp;_&nbsp;_&nbsp;&nbsp;&nbsp;/&nbsp;__|___|&nbsp;|&nbsp;|_&nbsp;___&nbsp;_&nbsp;_&nbsp;&nbsp;
+        %span &nbsp;\__&nbsp;\&nbsp;'_&nbsp;\/&nbsp;-_)&nbsp;'&nbsp;\/&nbsp;_/&nbsp;-_)&nbsp;'_|&nbsp;|&nbsp;(__/&nbsp;_&nbsp;\&nbsp;|&nbsp;&nbsp;_/&nbsp;_&nbsp;\&nbsp;'&nbsp;\&nbsp;
+        %span &nbsp;|___/&nbsp;.__/\___|_||_\__\___|_|&nbsp;&nbsp;&nbsp;&nbsp;\___\___/_|\__\___/_||_|
+        %span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      %span.bigger Developer
+      %br
+      .contact-links
+        .loc
+          %i.fas.fa-map-marker-alt
+          %span Chicago, IL
+        .fb
+          %i.fab.fa-facebook-f
+          %a{href: 'https://fb.me/scolton1', target: '_blank'} fb.me/scolton1
+        .email
+          %i.fas.fa-at
+          %a{href: 'mailto:me@scolton.tech'} me@scolton.tech
+        .github
+          %i.fab.fa-github-alt
+          %a{href: 'https://github.com/scolton99', target: '_blank'} github.com/scolton99
+    %footer
+      .l Copyright &copy; 2020 Spencer Colton

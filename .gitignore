@@ -1,0 +1,5 @@
+dist/**/*.html
+dist/assets/stylesheets/*
+dist/assets/**/*.js
+src/**/*.html
+src/**/*.css*

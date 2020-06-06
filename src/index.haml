@@ -1,0 +1,64 @@
+!!! 5
+%html
+  %head
+    %meta{charset: 'UTF-8'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'}
+    %title Spencer Colton
+    %link{rel: 'stylesheet', href: '/assets/stylesheets/main.css'}
+    %script{src: '/assets/scripts/script.js'}
+    %script{src: 'https://kit.fontawesome.com/04a7ede306.js', crossorigin: 'anonymous'}
+  %body
+    %header= File.read('nav.html')
+    .split
+      .terminal
+        %span.terminal-line
+        %span.terminal-line.name &nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_ _
+        %span.terminal-line.name | |_&nbsp;&nbsp;___| | |___
+        %span.terminal-line.name | ' \/ -_) | / _ \_
+        %span.terminal-line.name |_||_\___|_|_\___( )
+        %span.terminal-line.name (_| )_ __&nbsp;&nbsp;&nbsp;&nbsp;____|/_&nbsp;&nbsp;___ _ _&nbsp;&nbsp;__ ___ _ _
+        %span.terminal-line.name | |/| '&nbsp;&nbsp;\&nbsp;&nbsp;(_-< '_ \/ -_) ' \/ _/ -_) '_|&nbsp;
+        %span.terminal-line.name |_| |_|_|_| /__/ .__/\___|_||_\__\___|_|&nbsp;
+        %span.terminal-line.name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|_|&nbsp;
+        %span.terminal-line
+        %span.terminal-line I'm a computer scientist specializing in back-end web development.
+        %span.terminal-line
+        %span.terminal-line
+        %span.terminal-line I've worked on a couple of projects I'm quite proud of:
+        %span.terminal-line
+        %span.terminal-line.bold.green %%%%%%%%%%%%%%%%%%%%%%%
+        %span.terminal-line.bold.green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TSC Server
+        %span.terminal-line.bold.green %%%%%%%%%%%%%%%%%%%%%%%
+        %span.terminal-line At my job, we had access to tons of data but very few interfaces to view or manipulate it without a great degree of effort.
+        %span.terminal-line
+        %span.terminal-line I came up with (and executed) the idea for a server that would serve as an interface to our more powerful data sources.
+        %span.terminal-line
+          %a.bold.indent.aqua{href: '/projects/tsc-server.html'} Read more &rarr;
+        %span.terminal-line
+        %span.terminal-line
+        %span.terminal-line.bold.green %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %span.terminal-line.bold.green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Footprints Extension
+        %span.terminal-line.bold.green %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %span.terminal-line At the same job, our IT service management software had an archaic UI that slowed us down and was a source of frustration for all.
+        %span.terminal-line
+        %span.terminal-line To fix some of the more egregious parts of the UI (and add some new features!), I created a Chrome Extension.
+        %span.terminal-line
+          %a.bold.indent.aqua{href: '/projects/fp-extension.html'} Read more &rarr;
+        %span.terminal-line
+      .picture-container
+        .picture= File.read('picture.html')
+        .social-links
+          .link-fb
+            %a{href: 'https://fb.me/scolton1', target: '_blank'}
+              %i.fab.fa-facebook-f
+              %span fb.me/scolton1
+          .link-github
+            %a{href: 'https://github.com/scolton99', target: '_blank'}
+              %i.fab.fa-github-alt
+              %span github.com/scolton99
+          .link-email
+            %a{href: 'mailto:me@scolton.tech', target: '_blank'}
+              %i.fas.fa-at
+              %span me@scolton.tech
+    %footer
+      .l Copyright &copy; 2020 Spencer Colton

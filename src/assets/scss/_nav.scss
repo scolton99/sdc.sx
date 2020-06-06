@@ -1,0 +1,25 @@
+nav.emacs {
+  display: flex;
+  background-color: #E5E5E5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 10px;
+
+    &:first-of-type {
+      padding-left: 3px;
+    }
+
+    &:visited, &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

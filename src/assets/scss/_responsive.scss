@@ -1,0 +1,39 @@
+@media screen and (max-width: 1000px) {
+  div.split {
+    flex-direction: column;
+    height: auto;
+  }
+
+  div.terminal {
+    min-height: unset;
+    height: auto;
+
+    span.terminal-line {
+      font-size: 1.1em;
+    }
+
+    span.terminal-line.name {
+      letter-spacing: -3px;
+    }
+  }
+
+  > div:not(:last-of-type):not(p) {
+    border-right: none;
+    border-bottom: 10px solid #E5E5E5;
+  }
+
+  div.picture-container {
+    div.picture {
+      font-size: 0.65em;
+      align-self: unset;
+    }
+  }
+
+  body.contact main {
+    font-size: 0.95em;
+  }
+
+  .name span {
+    font-size: 0.75em;
+  }
+}

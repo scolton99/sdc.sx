@@ -1,0 +1,47 @@
+div.terminal {
+  flex-grow: 1;
+  overflow-y: hidden;
+  height: calc(100vh - 50px);
+  min-height: 675px;
+
+  span.terminal-line {
+    font-size: 1.35em;
+    text-transform: lowercase;
+    position: relative;
+    padding-left: calc(1.5em + 15px);
+    display: block;
+    min-height: 26.67px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 1.5em;
+      display: inline-block;
+      text-align: right;
+      color: #999;
+      font-weight: normal;
+    }
+  }
+}
+
+body.bio div.terminal,
+body.projects div.terminal {
+  margin-top: 26px;
+  height: auto;
+  min-height: calc(100vh - 50px);
+  margin-bottom: 26px;
+}
+
+@for $i from 1 through 150 {
+  #ln-#{$i}::before {
+    content: '#{$i}';
+  }
+}
+
+@for $i from 1 through 25 {
+  .lnht-#{$i} {
+    height: #{$i * 26.66667px};
+  }
+}

@@ -1,0 +1,33 @@
+!!! 5
+%html
+  %head
+    %meta{charset: 'UTF-8'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'}
+    %title Spencer Colton
+    %link{rel: 'stylesheet', href: '/assets/stylesheets/main.css'}
+    %script{src: '/assets/scripts/script.js'}
+    %script{src: 'https://kit.fontawesome.com/04a7ede306.js', crossorigin: 'anonymous'}
+  %body.projects
+    %header= File.read('../nav.html')
+    .terminal
+      %span.terminal-line
+      %span.terminal-line.green %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %span.terminal-line.green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROJECTS
+      %span.terminal-line.green %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %span.terminal-line
+      %span.terminal-line.bold.green %%% TSC Server
+      %span.terminal-line At my job, we had access to tons of data but very few interfaces to view or manipulate it without a great degree of effort.
+      %span.terminal-line
+      %span.terminal-line I came up with (and executed) the idea for a server that would serve as an interface to our more powerful data sources.
+      %span.terminal-line
+        %a.bold.indent.aqua{href: '/projects/tsc-server.html'} Read more &rarr;
+      %span.terminal-line
+      %span.terminal-line
+      %span.terminal-line.bold.green %%% Footprints Extension
+      %span.terminal-line At the same job, our IT service management software had an archaic UI that slowed us down and was a source of frustration for all.
+      %span.terminal-line
+      %span.terminal-line To fix some of the more egregious parts of the UI (and add some new features!), I created a Chrome Extension.
+      %span.terminal-line
+        %a.bold.indent.aqua{href: '/projects/fp-extension.html'} Read more &rarr;
+    %footer
+      .l Copyright &copy; 2020 Spencer Colton

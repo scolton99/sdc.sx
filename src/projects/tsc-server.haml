@@ -1,0 +1,53 @@
+!!! 5
+%html
+  %head
+    %meta{charset: 'UTF-8'}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'}
+    %title Spencer Colton
+    %link{rel: 'stylesheet', href: '/assets/stylesheets/main.css'}
+    %script{src: '/assets/scripts/script.js'}
+    %script{src: 'https://kit.fontawesome.com/04a7ede306.js', crossorigin: 'anonymous'}
+  %body.projects
+    %header= File.read('../nav.html')
+    .terminal
+      %span.terminal-line
+      %span.terminal-line.green %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %span.terminal-line.green &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TSC Server
+      %span.terminal-line.green %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %span.terminal-line
+      %span.terminal-line
+        My workplace had a lot of good systems in place to keep data on our day-to-day operations, but since there&nbsp;
+        weren't any mechanisms put in place to access or work with the data, a lot of it remained siloed and was largely&nbsp;
+        unused.
+      %span.terminal-line
+      %span.terminal-line
+        I was able to create a server to fetch data from all of our various data stores and put it together in new ways.&nbsp;
+        In the end, the "TSC Server" brought together all of these individual services (click for larger view):
+      %span.terminal-line.lnht-18
+        %a{href: 'https://imgur.com/rwTBHI6.jpg'}
+          %img.fullheight{src: 'https://imgur.com/rwTBHI6.jpg'}
+      %span.terminal-line
+      %span.terminal-line
+        The TSC server enables:
+      %span.terminal-line
+        &bull; Managers to see quantitative information about work completed in a given time period by any subset of employees.
+      %span.terminal-line
+        &bull; Employees to see who is working with them on shift on the homepage of our intranet. (Especially helpful when working remotely.)
+      %span.terminal-line
+        &bull; Everyone to see how full the main support request queue is.
+      %span.terminal-line
+        &bull; Technicians to identify support requests that may be spam at-a-glance.
+      %span.terminal-line
+        &bull; Employees to compliment one another and to see compliments on the homepage of the intranet. Requires that each compliment be approved by a manager before display.
+      %span.terminal-line
+        &bull; Managers to integrate workflows for receiving suggestions, approving time-off requests, and moderating compliments through Slack.
+      %span.terminal-line
+        &bull; New employees to upload their photo to the internal directory.
+      %span.terminal-line
+        &bull; All employees to see statistics for which internal groups typically complete which kind of support requests to improve quality of support.
+      %span.terminal-line
+      %span.terminal-line
+        The project started as a passion project of mine but eventually gained enough support to be noticed by higher&nbsp;
+        management and was integrated into Northwestern's Google Cloud environment.
+    %footer
+      .l Copyright &copy; 2020 Spencer Colton

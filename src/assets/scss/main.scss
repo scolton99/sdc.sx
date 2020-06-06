@@ -1,0 +1,95 @@
+@import 'picture';
+@import 'terminal';
+@import 'nav';
+@import 'social';
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/assets/fonts/FiraCode-Regular.woff2');
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+}
+
+div.split {
+  display: flex;
+  padding: 25px 0;
+  min-height: calc(100vh - 50px);
+  box-sizing: border-box;
+
+  > div:not(:last-of-type) {
+      border-right: 10px solid #E5E5E5;
+  }
+}
+
+footer {
+  background-color: #E5E5E5;
+  color: black;
+  font-style: italic;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 3px;
+  z-index: 999;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: #0F0;
+}
+
+.indent {
+  padding-left: 20px;
+}
+
+.aqua {
+  color: #0FF;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+body.contact {
+  main {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.name span {
+  display: block;
+}
+
+.bigger {
+  font-size: 1.4em;
+}
+
+.contact-links {
+  font-size: 1.3em;
+
+  > div {
+    margin-bottom: 10px;
+
+    i {
+      width: 18px;
+      text-align: center;
+    }
+
+    a, a:visited, a:hover {
+      color: white;
+    }
+  }
+}
+
+@import 'responsive';
