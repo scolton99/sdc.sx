@@ -12,7 +12,7 @@
       <paths name="sdc.sx">
         <serverdata>
           <mappings>
-            <mapping deploy="/main" local="$PROJECT_DIR$" web="/main" />
+            <mapping deploy="/main" local="$PROJECT_DIR$/dist" web="/" />
           </mappings>
         </serverdata>
       </paths>
